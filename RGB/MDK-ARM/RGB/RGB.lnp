@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"rgb\startup_stm32f103xe.o"
+"rgb\main.o"
+"rgb\stm32f1xx_it.o"
+"rgb\stm32f1xx_hal_msp.o"
+"rgb\stm32f1xx_hal_gpio_ex.o"
+"rgb\stm32f1xx_hal_tim.o"
+"rgb\stm32f1xx_hal_tim_ex.o"
+"rgb\stm32f1xx_hal.o"
+"rgb\stm32f1xx_hal_rcc.o"
+"rgb\stm32f1xx_hal_rcc_ex.o"
+"rgb\stm32f1xx_hal_gpio.o"
+"rgb\stm32f1xx_hal_dma.o"
+"rgb\stm32f1xx_hal_cortex.o"
+"rgb\stm32f1xx_hal_pwr.o"
+"rgb\stm32f1xx_hal_flash.o"
+"rgb\stm32f1xx_hal_flash_ex.o"
+"rgb\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RGB\RGB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RGB.map" -o RGB\RGB.axf

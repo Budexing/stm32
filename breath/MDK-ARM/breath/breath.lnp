@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"breath\startup_stm32f103xe.o"
+"breath\main.o"
+"breath\stm32f1xx_it.o"
+"breath\stm32f1xx_hal_msp.o"
+"breath\stm32f1xx_hal_gpio_ex.o"
+"breath\stm32f1xx_hal_tim.o"
+"breath\stm32f1xx_hal_tim_ex.o"
+"breath\stm32f1xx_hal.o"
+"breath\stm32f1xx_hal_rcc.o"
+"breath\stm32f1xx_hal_rcc_ex.o"
+"breath\stm32f1xx_hal_gpio.o"
+"breath\stm32f1xx_hal_dma.o"
+"breath\stm32f1xx_hal_cortex.o"
+"breath\stm32f1xx_hal_pwr.o"
+"breath\stm32f1xx_hal_flash.o"
+"breath\stm32f1xx_hal_flash_ex.o"
+"breath\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "breath\breath.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "breath.map" -o breath\breath.axf

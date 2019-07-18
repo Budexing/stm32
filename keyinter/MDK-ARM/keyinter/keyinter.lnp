@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"keyinter\startup_stm32f103xe.o"
+"keyinter\main.o"
+"keyinter\stm32f1xx_it.o"
+"keyinter\stm32f1xx_hal_msp.o"
+"keyinter\stm32f1xx_hal_gpio_ex.o"
+"keyinter\stm32f1xx_hal_tim.o"
+"keyinter\stm32f1xx_hal_tim_ex.o"
+"keyinter\stm32f1xx_hal.o"
+"keyinter\stm32f1xx_hal_rcc.o"
+"keyinter\stm32f1xx_hal_rcc_ex.o"
+"keyinter\stm32f1xx_hal_gpio.o"
+"keyinter\stm32f1xx_hal_dma.o"
+"keyinter\stm32f1xx_hal_cortex.o"
+"keyinter\stm32f1xx_hal_pwr.o"
+"keyinter\stm32f1xx_hal_flash.o"
+"keyinter\stm32f1xx_hal_flash_ex.o"
+"keyinter\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "keyinter\keyinter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "keyinter.map" -o keyinter\keyinter.axf

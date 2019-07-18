@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"led_keyboard\startup_stm32f103xe.o"
+"led_keyboard\main.o"
+"led_keyboard\stm32f1xx_it.o"
+"led_keyboard\stm32f1xx_hal_msp.o"
+"led_keyboard\keyboard.o"
+"led_keyboard\oled.o"
+"led_keyboard\stm32f1xx_hal_gpio_ex.o"
+"led_keyboard\stm32f1xx_hal_i2c.o"
+"led_keyboard\stm32f1xx_hal_tim.o"
+"led_keyboard\stm32f1xx_hal_tim_ex.o"
+"led_keyboard\stm32f1xx_hal.o"
+"led_keyboard\stm32f1xx_hal_rcc.o"
+"led_keyboard\stm32f1xx_hal_rcc_ex.o"
+"led_keyboard\stm32f1xx_hal_gpio.o"
+"led_keyboard\stm32f1xx_hal_dma.o"
+"led_keyboard\stm32f1xx_hal_cortex.o"
+"led_keyboard\stm32f1xx_hal_pwr.o"
+"led_keyboard\stm32f1xx_hal_flash.o"
+"led_keyboard\stm32f1xx_hal_flash_ex.o"
+"led_keyboard\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "led_keyboard\led_keyboard.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led_keyboard.map" -o led_keyboard\led_keyboard.axf

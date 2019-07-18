@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dma_idle\startup_stm32f103xe.o"
+"dma_idle\main.o"
+"dma_idle\stm32f1xx_it.o"
+"dma_idle\stm32f1xx_hal_msp.o"
+"dma_idle\oled.o"
+"dma_idle\stm32f1xx_hal_gpio_ex.o"
+"dma_idle\stm32f1xx_hal_i2c.o"
+"dma_idle\stm32f1xx_hal_tim.o"
+"dma_idle\stm32f1xx_hal_tim_ex.o"
+"dma_idle\stm32f1xx_hal_uart.o"
+"dma_idle\stm32f1xx_hal.o"
+"dma_idle\stm32f1xx_hal_rcc.o"
+"dma_idle\stm32f1xx_hal_rcc_ex.o"
+"dma_idle\stm32f1xx_hal_gpio.o"
+"dma_idle\stm32f1xx_hal_dma.o"
+"dma_idle\stm32f1xx_hal_cortex.o"
+"dma_idle\stm32f1xx_hal_pwr.o"
+"dma_idle\stm32f1xx_hal_flash.o"
+"dma_idle\stm32f1xx_hal_flash_ex.o"
+"dma_idle\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "dma_idle\dma_idle.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dma_idle.map" -o dma_idle\dma_idle.axf

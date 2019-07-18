@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"uart5\startup_stm32f103xe.o"
+"uart5\main.o"
+"uart5\stm32f1xx_it.o"
+"uart5\stm32f1xx_hal_msp.o"
+"uart5\stm32f1xx_hal_gpio_ex.o"
+"uart5\stm32f1xx_hal_tim.o"
+"uart5\stm32f1xx_hal_tim_ex.o"
+"uart5\stm32f1xx_hal_uart.o"
+"uart5\stm32f1xx_hal.o"
+"uart5\stm32f1xx_hal_rcc.o"
+"uart5\stm32f1xx_hal_rcc_ex.o"
+"uart5\stm32f1xx_hal_gpio.o"
+"uart5\stm32f1xx_hal_dma.o"
+"uart5\stm32f1xx_hal_cortex.o"
+"uart5\stm32f1xx_hal_pwr.o"
+"uart5\stm32f1xx_hal_flash.o"
+"uart5\stm32f1xx_hal_flash_ex.o"
+"uart5\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "uart5\uart5.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uart5.map" -o uart5\uart5.axf
